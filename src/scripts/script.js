@@ -4,12 +4,10 @@ const modalOpenButtons = document.querySelectorAll(".modal__button-open");
 
 function openModal() {
   modal.style.display = "block";
-  body.classList.add("no-scroll");
 }
 
 function closeModal() {
   modal.style.display = "none";
-  body.classList.remove("no-scroll");
 }
 
 modalOpenButtons.forEach((button) => {
