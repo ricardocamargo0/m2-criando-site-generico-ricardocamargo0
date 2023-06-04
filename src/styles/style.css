@@ -1,1 +1,332 @@
-/* ------------------------------- Coloque sua estilização aqui ------------------------------- */
+header {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 236px;
+
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  left: 0px;
+  top: 0px;
+
+  /* Grey Scale/grey-1 */
+
+  background: var(--grey-1);
+  /* Brand/brand-1 */
+
+  border-bottom: 2px solid #4c6ef5;
+}
+
+header p {
+  color: var(--grey-6);
+  font: var(--text-2);
+}
+header button {
+  background-color: var(--grey-1);
+  color: var(--grey-6);
+  border: 1px var(--grey-6) solid;
+}
+button {
+  padding: 20px;
+  cursor: pointer;
+}
+
+body {
+  background-color: var(--grey-2);
+  color: var(--grey-6);
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0px;
+  font-family: "Inter", sans-serif;
+}
+
+main {
+  display: flex;
+  margin-top: 100px;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Head first */
+
+.div__container-first {
+  height: 780px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div__container-first h1 {
+  font: var(--title-1);
+  line-height: 72px;
+  margin-bottom: 44px;
+}
+
+#enfase {
+  color: var(--brand-1);
+}
+
+.div__container-first p {
+  font-size: 20px;
+  font-weight: 20px;
+  line-height: 30px;
+  width: 770px;
+  margin-bottom: 44px;
+  color: var(--grey-4);
+  text-align: center;
+}
+
+.fake__button {
+  height: 60px;
+  background-color: var(--brand-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: var(--padding-button);
+}
+
+.fake__button:hover {
+  background-color: var(--brand-2);
+}
+
+/* Quem somos nós */
+
+.div__container-second {
+  background-color: var(--grey-1);
+  width: 100%;
+  height: 284px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.div__container-second h2 {
+  width: 285px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: var(--title-3);
+  color: var(--grey-6);
+  margin-left: 236px;
+}
+
+.div__container-second span {
+  width: 611px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font: var(--text-3);
+  color: var(--grey-5);
+}
+
+/* Sessão de FAQ */
+
+.section__container-first {
+  height: 1175px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
+}
+
+.FAQ__container-first {
+  width: 473px;
+  margin-top: 86px;
+  margin-left: 236px;
+}
+
+.FAQ__container-first h2 {
+  font: var(--title-2);
+  margin-bottom: 33px;
+  color: var(--grey-6);
+}
+
+.FAQ__container-first p {
+  font: var(--text-3);
+  margin-bottom: 33px;
+  color: var(--grey-4);
+}
+
+.FAQ__container-first span {
+  width: 241px;
+}
+
+.FAQ__container-second {
+  width: 614px;
+  margin-top: 86px;
+}
+
+.FAQ__container-second h3 {
+  font: var(--text-1);
+  color: var(--grey-6);
+  margin-bottom: 32px;
+}
+
+.FAQ__container-second p {
+  font: var(--text-2);
+  color: var(--grey-4);
+  margin-bottom: 60px;
+}
+
+/* Sessão de comentarios de alunos */
+
+.section__container-second {
+  height: 1040px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.students__list-reports div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 746px;
+  margin-bottom: 100px;
+  margin-left: 236px;
+  margin-right: 64px;
+}
+
+.students__list-reports span {
+  width: 35%;
+}
+
+.students__list-reports span h3 {
+  font: var(--text-1);
+  color: var(--grey-5);
+  margin-bottom: 8px;
+}
+
+.students__list-reports span p {
+  font: var(--text-3);
+  color: var(--grey-4);
+}
+
+.students__list-reports p {
+  font: var(--text-3);
+  color: var(--grey-5);
+  width: 65%;
+}
+
+.student__list-about {
+  background-color: var(--brand-1);
+  display: flex;
+  width: 446px;
+  height: 420px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.student__list-about h2 {
+  font: var(--title-3);
+  color: var(--grey-5);
+  width: 342px;
+  margin-left: 52px;
+}
+
+.student__list-about p {
+  font: var(--text-3);
+  color: var(--grey-6);
+  width: 307px;
+  margin-left: 52px;
+}
+
+/* Rodapé */
+footer {
+  background-color: var(--grey-1);
+  width: 100%;
+  height: 119px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: var(--text-3);
+}
+
+/* Estilo para o modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: var(--grey-2);
+  margin: 15% auto;
+  border: 2px solid var(--brand-2);
+  width: 504px;
+  height: 397px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.modal-head {
+  display: flex;
+  justify-content: space-between;
+  height: 32px;
+  margin-left: 28px;
+  margin-right: 28px;
+  margin-top: 30px;
+}
+.modal-head h3 {
+  font: var(--text-2);
+  color: var(--grey-5);
+}
+
+.modal-content p {
+  font: var(--text-3);
+  color: var(--grey-4);
+  margin-left: 28px;
+  margin-right: 28px;
+}
+
+.modal-content input {
+  background-color: var(--grey-1);
+  border: 1px solid var(--grey-1);
+  color: var(--grey-4);
+  font: var(--text-2);
+  height: 60px;
+  width: 448px;
+  margin-left: 28px;
+  margin-right: 28px;
+}
+
+.modal-content input:focus {
+  border: 1px solid var(--grey-1);
+}
+
+.modal-content span {
+  margin-left: 28px;
+  margin-right: 28px;
+  margin-bottom: 40px;
+}
+
+.close {
+  color: #aaa;
+  font: var(--text-2);
+  cursor: pointer;
+  background-color: var(--grey-3);
+  border-radius: 3px;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
