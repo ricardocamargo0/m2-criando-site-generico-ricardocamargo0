@@ -296,8 +296,8 @@ footer {
 }
 
 .modal-content input {
-  background-color: var(--grey-1);
-  border: 1px solid var(--grey-1);
+  background-color: var(--grey-3);
+  border: 1px solid var(--grey-3);
   color: var(--grey-4);
   font: var(--text-2);
   height: 60px;
@@ -307,7 +307,9 @@ footer {
 }
 
 .modal-content input:focus {
-  border: 1px solid var(--grey-1);
+  border: 1px solid var(--brand-1);
+  background-color: var(--grey-2);
+  outline: none;
 }
 
 .modal-content span {
